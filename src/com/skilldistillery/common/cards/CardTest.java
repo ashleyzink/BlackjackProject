@@ -14,7 +14,7 @@ public class CardTest {
 //    }
 
 		Deck deck = new Deck();
-//		deck.shuffle();
+		deck.shuffle();
 		Scanner input = new Scanner(System.in);
 		System.out.println("How many cards?");
 
@@ -25,7 +25,7 @@ public class CardTest {
 			} else {
 				int value = 0;
 				for (int i = 0; i < num; i++) {
-					Card c = deck.dealCard();
+					Card c = deck.drawCard();
 					value += c.getValue();
 					System.out.println(c);
 				}

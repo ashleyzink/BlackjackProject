@@ -21,18 +21,15 @@ public class Deck {
 	}
 
 	public int checkDeckSize() {
-
 		return cards.size();
-
 	}
 
-	public Card dealCard() {
+	public Card drawCard() {
 		return cards.remove(0);
 	}
 
 	public void shuffle() {
 		Collections.shuffle(cards);
-
 	}
 
 }
