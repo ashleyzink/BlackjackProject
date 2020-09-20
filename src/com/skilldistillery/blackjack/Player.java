@@ -5,8 +5,10 @@ import com.skilldistillery.common.cards.Card;
 public class Player {
 	
 	protected BlackjackHand bJackHand;
+	private String name;
 	
-	public Player() {
+	public Player(String name) {
+		this.name = name;
 		bJackHand = new BlackjackHand();
 				
 	}
@@ -21,6 +23,10 @@ public class Player {
 	public void playerShowHand() {
 		bJackHand.toString();
 		System.out.println("Player 1" + bJackHand.toString() + "\nThe value is: " + bJackHand.getHandValue());
+	}
+	@Override
+	public String toString() {
+		return name;
 	}
 
 }

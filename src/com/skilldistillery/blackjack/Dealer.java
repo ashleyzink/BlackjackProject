@@ -9,9 +9,9 @@ public class Dealer extends Player{
 	
 	private Deck deck;
 	
-	public Dealer() {
+	public Dealer(String name) {
+		super(name);
 		deck = new Deck();
-		bJackHand = new BlackjackHand();
 				
 	}
 	
