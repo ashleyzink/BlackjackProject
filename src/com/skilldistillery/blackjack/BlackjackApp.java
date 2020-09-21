@@ -14,7 +14,6 @@ public class BlackjackApp {
 
 	private void launch() {
 		player1 = new Player("Player 1");
-		// Msg to player for input when they sit down
 		dealer = new Dealer("Dealer");
 		startNewGame();
 		player1.playerShowHand();
